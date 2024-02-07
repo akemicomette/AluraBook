@@ -55,6 +55,10 @@
     font-weight: 700;
 }
 
+.lista-menu__item {
+    padding: 1em 2em;
+}
+
 .lista-menu__link {
     background: var(--gradient-blue);
     background-clip: text;
@@ -79,19 +83,21 @@
 }
 
 @media screen and (min-width: 1024px) {
-    .container__titulo, .container__titulo--negrito {
+    .container__titulo {
         font-family: var(--secundary-font);
         font-size: 30px;
-        padding: 0.5em 0;
+        padding: 0 0.5em;
     }
 
     .container__titulo {
         font-weight: 400;
-        display: block;
+        display: flex;
+        align-items: center;
     }
 
     .container__titulo--negrito {
         font-weight: 700;
+        font-family: var(--secundary-font);
     }
 
     .opções {
@@ -119,7 +125,7 @@
     .opções__botão:checked~.lista-menu{
         display: block;
         width: auto;
-        padding: 0 1em;
+        
     }
 
     .opções__botão {
@@ -146,8 +152,8 @@
 }
 
 @media screen and (min-width: 1728px) {
-    .container__titulo, .container__titulo--negrito {
-        padding: 1em 0;
+    .container__titulo {
+        padding: 0 0.5em;
     }
     
     .container__link {
